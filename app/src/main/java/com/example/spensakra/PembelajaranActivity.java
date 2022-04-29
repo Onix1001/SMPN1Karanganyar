@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,8 +14,6 @@ import java.util.ArrayList;
 
 public class PembelajaranActivity extends Activity {
 
-    private RecyclerView recyclerView;
-    private BelajarAdapter adapter;
     private ArrayList<Pembelajaran> belajarArrayList;
 
     @Override
@@ -26,9 +23,9 @@ public class PembelajaranActivity extends Activity {
 
         addData();
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        adapter = new BelajarAdapter(belajarArrayList);
+        BelajarAdapter adapter = new BelajarAdapter(belajarArrayList);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(PembelajaranActivity.this);
 
