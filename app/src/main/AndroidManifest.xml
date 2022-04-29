@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.spensakra">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/smp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smp_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Spensakra">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".DatabaseActivity"/>
+        <activity android:name=".PembelajaranActivity"/>
+        <activity android:name=".GalleryActivity"/>
+        <activity android:name=".SambutanAvtivity"/>
+        <activity android:name=".VisiMisiActivity"/>
+        <activity android:name=".StrOrganisasiActivity"/>
+        <activity android:name=".SejarahActivity"/>
+        <activity android:name=".SertifikasiActivity"/>
+        <activity android:name=".ProkerActivity"/>
+        <activity android:name=".SiswaActivity"/>
+        <activity android:name=".GuruActivity"/>
+        <activity android:name=".eskul.CakramActivity"/>
+        <activity android:name=".eskul.JurnalistikActivity"/>
+        <activity android:name=".eskul.PMRActivity"/>
+
+    </application>
+
+</manifest>
